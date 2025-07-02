@@ -126,12 +126,8 @@ const Index = () => {
           <div className="flex justify-center">
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1">
-                <div className="w-full h-full rounded-full overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/cc8d6262-3632-4ffd-9ee3-ff083b6439dc.png" 
-                    alt="Sumathi D - Digital Marketing Professional"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full h-full rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-lg font-medium">
+                  Profile Photo
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-500/20 rounded-full animate-pulse"></div>
