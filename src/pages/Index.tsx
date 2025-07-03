@@ -34,7 +34,7 @@ const Index = () => {
     scrollToSection('experience');
   };
   const skills = {
-    "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva", "Gravity Write"],
+    "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva", "Gravity Write", "ChatGPT"],
     "Core Skills": ["SEO", "Content Marketing", "SMM", "Email Marketing", "GMB Optimization"],
     "Technical Tools": ["HTML", "CSS", "WordPress", "GitHub"],
     "Additional": ["Typing (Speed & Accuracy)"]
