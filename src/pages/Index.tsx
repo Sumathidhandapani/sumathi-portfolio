@@ -33,8 +33,8 @@ const Index = () => {
   };
 
   const handleViewWork = () => {
-    // Replace this URL with your actual portfolio/work showcase URL
-    window.open('https://your-portfolio-url.com', '_blank');
+    // Scroll to the experience section to show work history
+    scrollToSection('experience');
   };
 
   const skills = {
