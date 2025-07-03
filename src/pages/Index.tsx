@@ -130,7 +130,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/cc8d6262-3632-4ffd-9ee3-ff083b6439dc.png" 
                     alt="Sumathi D - Digital Marketing Professional"
-                    className="w-full h-full object-cover object-[center_60%]"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
