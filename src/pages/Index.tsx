@@ -86,9 +86,9 @@ const Index = () => {
     location: "Remote"
   }, {
     title: "Digital Marketing Intern",
-    company: "Shanthila Databot",
-    period: "Jun 2023 – Jul 2023",
-    description: "Blog writing and SEO fundamentals",
+    company: "Shanthils Databot",
+    period: "June 2023 – July 2023",
+    description: "Learned the basics of SEO and digital marketing by writing blogs and supporting content efforts for the website.",
     location: "Remote"
   }];
   const projects = [{
