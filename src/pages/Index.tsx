@@ -152,7 +152,7 @@ const Index = () => {
             </p>
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-purple-400 mb-4">Education</h3>
-              <p className="text-gray-300">Computer Science and Engineering</p>
+              <p className="text-gray-300">B.E - Computer Science and Engineering</p>
               <p className="text-gray-400">J.K.K. Nattraja College of Engineering and Technology</p>
               <p className="text-gray-400">
             </p>
