@@ -244,7 +244,7 @@ const Index = () => {
                     <div className="space-y-4">
                       {exp.details.map((detail, detailIndex) => (
                         <div key={detailIndex}>
-                          <h4 className="text-purple-300 font-semibold mb-2">• {detail.category}</h4>
+                          <h4 className="text-purple-300 font-semibold mb-2">{detail.category}</h4>
                           <ul className="space-y-2 ml-4">
                             {detail.items.map((item, itemIndex) => (
                               <li key={itemIndex} className="text-gray-300 text-sm leading-relaxed list-disc">
