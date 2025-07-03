@@ -66,7 +66,23 @@ const Index = () => {
     title: "Web Development Intern",
     company: "Corizo",
     period: "Aug 2024 – Oct 2024",
-    description: "CRUD web app and E-commerce cart page development",
+    description: "During this internship, I worked on both individual and team-based web development projects that enhanced my practical skills in front-end and full-stack development.",
+    details: [
+      {
+        category: "Minor Project – CRUD Application",
+        items: [
+          "Independently built a Create, Read, Update, Delete (CRUD) web application",
+          "Gained experience in backend operations, form handling, and database integration"
+        ]
+      },
+      {
+        category: "Major Project – E-commerce Website (Team Project)",
+        items: [
+          "Contributed as a front-end developer",
+          "Responsible for developing the cart page functionality, including item add/remove logic and total cost calculation"
+        ]
+      }
+    ],
     location: "Remote"
   }, {
     title: "Digital Marketing Intern",
