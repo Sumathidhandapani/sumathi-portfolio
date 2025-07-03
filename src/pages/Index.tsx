@@ -46,14 +46,14 @@ const Index = () => {
     description: "At ByZero Technologies, I gained hands-on experience in core areas of digital marketing, contributing to both real client work and demo-based learning.",
     details: [
       {
-        category: "🔍 Search Engine Optimization (SEO)",
+        category: "Search Engine Optimization (SEO)",
         items: [
           "Off-Page SEO (Client Projects): Created backlinks to improve search engine rankings through social bookmarking, blog submissions, guest posting, and article submissions",
           "On-Page SEO (Demo Website): Performed keyword research using Google Keyword Planner, wrote optimized meta titles and descriptions, added internal and external links for site structure and relevance, used image alt tags for better accessibility and SEO performance"
         ]
       },
       {
-        category: "📈 Google Ads & Social Media Marketing",
+        category: "Google Ads & Social Media Marketing",
         items: [
           "Designed and managed demo campaigns to understand targeting, bidding, and performance analysis",
           "Practiced campaign structure setup, ad copywriting, and creative design",
@@ -228,10 +228,10 @@ const Index = () => {
                     <div className="space-y-4">
                       {exp.details.map((detail, detailIndex) => (
                         <div key={detailIndex}>
-                          <h4 className="text-purple-300 font-semibold mb-2">{detail.category}</h4>
-                          <ul className="space-y-2">
+                          <h4 className="text-purple-300 font-semibold mb-2">• {detail.category}</h4>
+                          <ul className="space-y-2 ml-4">
                             {detail.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="text-gray-300 text-sm leading-relaxed pl-4 border-l-2 border-purple-500/30">
+                              <li key={itemIndex} className="text-gray-300 text-sm leading-relaxed list-disc">
                                 {item}
                               </li>
                             ))}
