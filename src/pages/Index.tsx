@@ -128,7 +128,7 @@ const Index = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
-                    src="/lovable-uploads/cc8d6262-3632-4ffd-9ee3-ff083b6439dc.png" 
+                    src="/lovable-uploads/a2092875-bd60-4b57-ba8c-bc403795f273.png" 
                     alt="Sumathi D - Digital Marketing Professional"
                     className="w-full h-full object-cover object-center"
                   />
