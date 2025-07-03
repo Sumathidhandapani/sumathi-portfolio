@@ -273,9 +273,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => <Card key={index} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-105">
                 <CardHeader>
-                  <CardTitle className="text-white flex items-center gap-2">
+                  <CardTitle className="text-white">
                     {project.title}
-                    <ExternalLink size={16} className="text-purple-400" />
                   </CardTitle>
                   <CardDescription className="text-gray-300">{project.description}</CardDescription>
                 </CardHeader>
