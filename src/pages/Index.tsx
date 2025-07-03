@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowDown, Mail, Linkedin, Download, ExternalLink, Calendar, MapPin } from "lucide-react";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   useEffect(() => {
@@ -33,7 +34,7 @@ const Index = () => {
     scrollToSection('experience');
   };
   const skills = {
-    "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva"],
+    "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva", "Gravity Write"],
     "Core Skills": ["SEO", "Content Marketing", "SMM", "Email Marketing", "GMB Optimization"],
     "Technical Tools": ["HTML", "CSS", "WordPress", "GitHub"],
     "Additional": ["Typing (Speed & Accuracy)"]
