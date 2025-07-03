@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,10 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowDown, Mail, Linkedin, Download, ExternalLink, Calendar, MapPin } from "lucide-react";
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
@@ -26,18 +23,15 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth'
     });
   };
-
   const handleViewWork = () => {
     // Scroll to the experience section to show work history
     scrollToSection('experience');
   };
-
   const skills = {
     "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva"],
     "Core Skills": ["SEO", "Content Marketing", "SMM", "Email Marketing", "GMB Optimization"],
@@ -84,7 +78,6 @@ const Index = () => {
     description: "Comprehensive backlink strategy with article, blog, and guest post submissions",
     tech: ["Link Building", "Content Marketing", "Outreach", "SEO"]
   }];
-
   return <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-purple-500/20">
@@ -161,7 +154,8 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-purple-400 mb-4">Education</h3>
               <p className="text-gray-300">Computer Science and Engineering</p>
               <p className="text-gray-400">J.K.K. Nattraja College of Engineering and Technology</p>
-              <p className="text-gray-400">Class of 2025</p>
+              <p className="text-gray-400">
+            </p>
             </div>
           </div>
         </div>
@@ -316,5 +310,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
