@@ -5,8 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowDown, Mail, Linkedin, Download, ExternalLink, Calendar, MapPin } from "lucide-react";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
@@ -23,11 +25,18 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth'
     });
   };
+
+  const handleViewWork = () => {
+    // Replace this URL with your actual portfolio/work showcase URL
+    window.open('https://your-portfolio-url.com', '_blank');
+  };
+
   const skills = {
     "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva"],
     "Core Skills": ["SEO", "Content Marketing", "SMM", "Email Marketing", "GMB Optimization"],
@@ -74,6 +83,7 @@ const Index = () => {
     description: "Comprehensive backlink strategy with article, blog, and guest post submissions",
     tech: ["Link Building", "Content Marketing", "Outreach", "SEO"]
   }];
+
   return <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-purple-500/20">
@@ -114,7 +124,7 @@ const Index = () => {
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in delay-300">Aspiring Digital Marketer with a passion for growing brands online.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in delay-500">
-              <Button onClick={() => scrollToSection('projects')} className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 text-lg">
+              <Button onClick={handleViewWork} className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 text-lg">
                 View My Work
               </Button>
               <Button onClick={() => scrollToSection('contact')} variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-3 text-lg">
@@ -318,4 +328,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
