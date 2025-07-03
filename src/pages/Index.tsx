@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -154,8 +155,7 @@ const Index = () => {
               Her journey into digital marketing began with curiosity about how online brands grow and engage.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Through internships at ByZero Technologies, Shanthila Databot, and Corizo, she gained hands-on experience in SEO, Ads, and content strategies. 
-              Creative, detail-oriented, and always learning, Sumathi aims to help businesses grow through smart digital strategy.
+              Through internships at ByZero Technologies, Shanthila Databot, and Corizo, she gained hands-on experience in SEO, Ads, and content strategies. Creative, detail-oriented, and always learning, Sumathi aims to help businesses grow through smart digital strategy.
             </p>
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-purple-400 mb-4">Education</h3>
