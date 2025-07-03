@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowDown, Mail, Linkedin, Download, ExternalLink, Calendar, MapPin } from "lucide-react";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   useEffect(() => {
@@ -143,25 +144,13 @@ const Index = () => {
             About <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Me</span>
           </h2>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-            <p className="text-gray-300 text-lg leading-relaxed mb-6">I’m Sumathi, a recent graduate in Computer Science and Engineering from J.K.K. Nattraja College of Engineering and Technology (Class of 2025). My journey into digital marketing began with a genuine curiosity about how brands grow and connect with people online.
-
-
-
-
-During my internships at ByZero Technologies, Shanthils Databot, and Corizo, I gained hands-on experience in SEO (on-page and off-page), Google Ads, social media marketing, email marketing, and Google Business Profile optimization. These experiences helped me understand the real impact of digital strategies on business growth.
-
-
-
-
-I’m creative, detail-oriented, and always eager to learn. My goal is to help businesses grow through smart, engaging, and effective digital marketing strategies.</p>
-            <p className="text-gray-300 text-lg leading-relaxed mb-6">
-          </p>
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">I'm Sumathi, a recent graduate in Computer Science and Engineering from J.K.K. Nattraja College of Engineering and Technology. My journey into digital marketing began with a genuine curiosity about how brands grow and connect with people online.</p>
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">During my internships at ByZero Technologies, Shanthils Databot, and Corizo, I gained hands-on experience in SEO (on-page and off-page), Google Ads, social media marketing, email marketing, and Google Business Profile optimization. These experiences helped me understand the real impact of digital strategies on business growth.</p>
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">I'm creative, detail-oriented, and always eager to learn. My goal is to help businesses grow through smart, engaging, and effective digital marketing strategies.</p>
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-purple-400 mb-4">Education</h3>
               <p className="text-gray-300">B.E - Computer Science and Engineering</p>
               <p className="text-gray-400">J.K.K. Nattraja College of Engineering and Technology</p>
-              <p className="text-gray-400">
-            </p>
             </div>
           </div>
         </div>
