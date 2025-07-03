@@ -33,6 +33,14 @@ const Index = () => {
     // Scroll to the experience section to show work history
     scrollToSection('experience');
   };
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/821d9859-e0a2-4771-a5d0-ccd668407b51.png';
+    link.download = 'Sumathi_D_Resume.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const skills = {
     "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva", "Gravity Write", "ChatGPT", "Google Tag Manager"],
     "Core Skills": ["SEO", "Content Marketing", "SMM", "Email Marketing", "GMB Optimization"],
@@ -332,7 +340,10 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 flex items-center gap-2">
+              <Button 
+                onClick={handleDownloadResume}
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 flex items-center gap-2"
+              >
                 <Download size={20} />
                 Download Resume
               </Button>
