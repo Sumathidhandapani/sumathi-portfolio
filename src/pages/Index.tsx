@@ -325,18 +325,26 @@ const Index = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 text-gray-300">
+                  <a 
+                    href="mailto:sumathidhandapani72@gmail.com"
+                    className="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors cursor-pointer"
+                  >
                     <Mail className="text-purple-400" size={20} />
                     <span>sumathidhandapani72@gmail.com</span>
-                  </div>
+                  </a>
                   <div className="flex items-center gap-3 text-gray-300">
                     <span className="text-purple-400 text-xl">📱</span>
                     <span>9361177822</span>
                   </div>
-                  <div className="flex items-center gap-3 text-gray-300">
+                  <a 
+                    href="https://www.linkedin.com/in/sumathi-d-097113235"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors cursor-pointer"
+                  >
                     <Linkedin className="text-purple-400" size={20} />
                     <span>LinkedIn Profile</span>
-                  </div>
+                  </a>
                 </div>
               </div>
               
@@ -359,11 +367,24 @@ const Index = () => {
             © 2024 Sumathi D. All rights reserved.
           </p>
           <div className="flex justify-center gap-4 mt-4">
-            <Mail className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors" size={24} />
-            <Linkedin className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors" size={24} />
+            <a 
+              href="mailto:sumathidhandapani72@gmail.com"
+              className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors"
+            >
+              <Mail size={24} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/sumathi-d-097113235"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
           </div>
         </div>
       </footer>
     </div>;
 };
+
 export default Index;
