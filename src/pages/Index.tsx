@@ -43,7 +43,24 @@ const Index = () => {
     title: "Digital Marketing Intern",
     company: "ByZero Technologies",
     period: "Feb 2025 – Jun 2025",
-    description: "Off-page SEO for client sites, On-page SEO for demo website, Google Ads & SMM campaign structure and execution",
+    description: "At ByZero Technologies, I gained hands-on experience in core areas of digital marketing, contributing to both real client work and demo-based learning.",
+    details: [
+      {
+        category: "🔍 Search Engine Optimization (SEO)",
+        items: [
+          "Off-Page SEO (Client Projects): Created backlinks to improve search engine rankings through social bookmarking, blog submissions, guest posting, and article submissions",
+          "On-Page SEO (Demo Website): Performed keyword research using Google Keyword Planner, wrote optimized meta titles and descriptions, added internal and external links for site structure and relevance, used image alt tags for better accessibility and SEO performance"
+        ]
+      },
+      {
+        category: "📈 Google Ads & Social Media Marketing",
+        items: [
+          "Designed and managed demo campaigns to understand targeting, bidding, and performance analysis",
+          "Practiced campaign structure setup, ad copywriting, and creative design",
+          "Demo Campaigns Created"
+        ]
+      }
+    ],
     location: "Remote"
   }, {
     title: "Web Development Intern",
@@ -206,7 +223,23 @@ const Index = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-300">{exp.description}</p>
+                  <p className="text-gray-300 mb-4">{exp.description}</p>
+                  {exp.details && (
+                    <div className="space-y-4">
+                      {exp.details.map((detail, detailIndex) => (
+                        <div key={detailIndex}>
+                          <h4 className="text-purple-300 font-semibold mb-2">{detail.category}</h4>
+                          <ul className="space-y-2">
+                            {detail.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="text-gray-300 text-sm leading-relaxed pl-4 border-l-2 border-purple-500/30">
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>)}
           </div>
