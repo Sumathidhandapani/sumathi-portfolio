@@ -105,7 +105,7 @@ const Index = () => {
     tech: ["SEO", "WordPress", "Analytics", "Keyword Research"]
   }, {
     title: "Google Ads Campaigns",
-    description: "Demo advertising campaigns with keyword targeting and creative copywriting",
+    description: "Planned and executed demo campaigns using keyword strategy and persuasive ad content to drive targeted results.",
     tech: ["Google Ads", "Keyword Research", "Copywriting", "Campaign Management"]
   }, {
     title: "Client SEO Off-Page",
