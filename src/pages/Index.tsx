@@ -157,23 +157,11 @@ const Index = () => {
               Through internships at ByZero Technologies, Shanthila Databot, and Corizo, she gained hands-on experience in SEO, Ads, and content strategies. 
               Creative, detail-oriented, and always learning, Sumathi aims to help businesses grow through smart digital strategy.
             </p>
-            <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div>
-                <h3 className="text-xl font-semibold text-purple-400 mb-4">Education</h3>
-                <p className="text-gray-300">Computer Science and Engineering</p>
-                <p className="text-gray-400">J.K.K. Nattraja College of Engineering and Technology</p>
-                <p className="text-gray-400">Class of 2025</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-purple-400 mb-4">Key Strengths</h3>
-                <ul className="text-gray-300 space-y-2">
-                  <li>• SEO (on-page/off-page)</li>
-                  <li>• Google Ads campaigns</li>
-                  <li>• Social media marketing</li>
-                  <li>• Email marketing</li>
-                  <li>• Google Business Profile optimization</li>
-                </ul>
-              </div>
+            <div className="mt-8">
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">Education</h3>
+              <p className="text-gray-300">Computer Science and Engineering</p>
+              <p className="text-gray-400">J.K.K. Nattraja College of Engineering and Technology</p>
+              <p className="text-gray-400">Class of 2025</p>
             </div>
           </div>
         </div>
