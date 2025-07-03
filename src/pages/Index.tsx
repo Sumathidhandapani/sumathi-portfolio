@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,10 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowDown, Mail, Linkedin, Download, ExternalLink, Calendar, MapPin } from "lucide-react";
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
@@ -23,76 +20,61 @@ const Index = () => {
       });
       if (current) setActiveSection(current);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
   const skills = {
     "Digital Marketing Tools": ["Google Ads", "Analytics", "Search Console", "Keyword Planner", "Meta Ads Manager", "Canva"],
     "Core Skills": ["SEO", "Content Marketing", "SMM", "Email Marketing", "GMB Optimization"],
     "Technical Tools": ["HTML", "CSS", "WordPress", "GitHub"],
     "Additional": ["Typing (Speed & Accuracy)"]
   };
-
-  const experiences = [
-    {
-      title: "Digital Marketing Intern",
-      company: "ByZero Technologies",
-      period: "Feb 2025 – Jun 2025",
-      description: "Off-page SEO for client sites, On-page SEO for demo website, Google Ads & SMM campaign structure and execution",
-      location: "Remote"
-    },
-    {
-      title: "Web Development Intern",
-      company: "Corizo",
-      period: "Aug 2024 – Oct 2024",
-      description: "CRUD web app and E-commerce cart page development",
-      location: "Remote"
-    },
-    {
-      title: "Digital Marketing Intern",
-      company: "Shanthila Databot",
-      period: "Jun 2023 – Jul 2023",
-      description: "Blog writing and SEO fundamentals",
-      location: "Remote"
-    }
-  ];
-
-  const projects = [
-    {
-      title: "CRUD Web App",
-      description: "Simple application using HTML/CSS/JS with local storage functionality",
-      tech: ["HTML", "CSS", "JavaScript", "Local Storage"]
-    },
-    {
-      title: "E-commerce Cart Page",
-      description: "Developed cart functionality as part of a collaborative team project",
-      tech: ["HTML", "CSS", "JavaScript", "Team Collaboration"]
-    },
-    {
-      title: "SEO Optimization (Demo Site)",
-      description: "Complete on-page SEO setup and optimization strategy",
-      tech: ["SEO", "WordPress", "Analytics", "Keyword Research"]
-    },
-    {
-      title: "Google Ads Campaigns",
-      description: "Demo advertising campaigns with keyword targeting and creative copywriting",
-      tech: ["Google Ads", "Keyword Research", "Copywriting", "Campaign Management"]
-    },
-    {
-      title: "Client SEO Off-Page",
-      description: "Comprehensive backlink strategy with article, blog, and guest post submissions",
-      tech: ["Link Building", "Content Marketing", "Outreach", "SEO"]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+  const experiences = [{
+    title: "Digital Marketing Intern",
+    company: "ByZero Technologies",
+    period: "Feb 2025 – Jun 2025",
+    description: "Off-page SEO for client sites, On-page SEO for demo website, Google Ads & SMM campaign structure and execution",
+    location: "Remote"
+  }, {
+    title: "Web Development Intern",
+    company: "Corizo",
+    period: "Aug 2024 – Oct 2024",
+    description: "CRUD web app and E-commerce cart page development",
+    location: "Remote"
+  }, {
+    title: "Digital Marketing Intern",
+    company: "Shanthila Databot",
+    period: "Jun 2023 – Jul 2023",
+    description: "Blog writing and SEO fundamentals",
+    location: "Remote"
+  }];
+  const projects = [{
+    title: "CRUD Web App",
+    description: "Simple application using HTML/CSS/JS with local storage functionality",
+    tech: ["HTML", "CSS", "JavaScript", "Local Storage"]
+  }, {
+    title: "E-commerce Cart Page",
+    description: "Developed cart functionality as part of a collaborative team project",
+    tech: ["HTML", "CSS", "JavaScript", "Team Collaboration"]
+  }, {
+    title: "SEO Optimization (Demo Site)",
+    description: "Complete on-page SEO setup and optimization strategy",
+    tech: ["SEO", "WordPress", "Analytics", "Keyword Research"]
+  }, {
+    title: "Google Ads Campaigns",
+    description: "Demo advertising campaigns with keyword targeting and creative copywriting",
+    tech: ["Google Ads", "Keyword Research", "Copywriting", "Campaign Management"]
+  }, {
+    title: "Client SEO Off-Page",
+    description: "Comprehensive backlink strategy with article, blog, and guest post submissions",
+    tech: ["Link Building", "Content Marketing", "Outreach", "SEO"]
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-purple-500/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,19 +83,9 @@ const Index = () => {
               Sumathi D
             </div>
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'skills', 'experience', 'projects', 'contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className={`capitalize transition-colors duration-300 ${
-                    activeSection === item
-                      ? 'text-purple-400 border-b-2 border-purple-400'
-                      : 'text-gray-300 hover:text-purple-400'
-                  }`}
-                >
+              {['home', 'about', 'skills', 'experience', 'projects', 'contact'].map(item => <button key={item} onClick={() => scrollToSection(item)} className={`capitalize transition-colors duration-300 ${activeSection === item ? 'text-purple-400 border-b-2 border-purple-400' : 'text-gray-300 hover:text-purple-400'}`}>
                   {item}
-                </button>
-              ))}
+                </button>)}
             </div>
           </div>
         </div>
@@ -127,11 +99,7 @@ const Index = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/a2092875-bd60-4b57-ba8c-bc403795f273.png" 
-                    alt="Sumathi D - Digital Marketing Professional"
-                    className="w-full h-full object-cover object-center"
-                  />
+                  <img src="/lovable-uploads/a2092875-bd60-4b57-ba8c-bc403795f273.png" alt="Sumathi D - Digital Marketing Professional" className="w-full h-full object-cover object-center" />
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-500/20 rounded-full animate-pulse"></div>
@@ -144,10 +112,7 @@ const Index = () => {
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
               Hi, I'm <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Sumathi</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in delay-300">
-              A passionate digital marketing enthusiast with hands-on experience in SEO, Google Ads, and content creation. 
-              I help brands connect with audiences through strategic digital campaigns.
-            </p>
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in delay-300">Aspiring Digital Marketer with a passion for growing brands online.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in delay-500">
               <Button onClick={() => scrollToSection('projects')} className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 text-lg">
                 View My Work
@@ -211,22 +176,18 @@ const Index = () => {
             My <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Skills</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {Object.entries(skills).map(([category, skillList]) => (
-              <Card key={category} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300">
+            {Object.entries(skills).map(([category, skillList]) => <Card key={category} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-purple-400 text-lg">{category}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {skillList.map((skill) => (
-                      <Badge key={skill} variant="secondary" className="bg-purple-500/20 text-purple-300 hover:bg-purple-500/30">
+                    {skillList.map(skill => <Badge key={skill} variant="secondary" className="bg-purple-500/20 text-purple-300 hover:bg-purple-500/30">
                         {skill}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -238,8 +199,7 @@ const Index = () => {
             My <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Experience</span>
           </h2>
           <div className="space-y-8">
-            {experiences.map((exp, index) => (
-              <Card key={index} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300">
+            {experiences.map((exp, index) => <Card key={index} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                     <div>
@@ -261,8 +221,7 @@ const Index = () => {
                 <CardContent>
                   <p className="text-gray-300">{exp.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -274,8 +233,7 @@ const Index = () => {
             My <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Projects</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <Card key={index} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-105">
+            {projects.map((project, index) => <Card key={index} className="bg-slate-800/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-105">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center gap-2">
                     {project.title}
@@ -285,15 +243,12 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <Badge key={tech} variant="outline" className="border-purple-400/50 text-purple-300">
+                    {project.tech.map(tech => <Badge key={tech} variant="outline" className="border-purple-400/50 text-purple-300">
                         {tech}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -361,8 +316,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
