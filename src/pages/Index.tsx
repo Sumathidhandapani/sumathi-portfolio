@@ -148,7 +148,7 @@ const Index = () => {
           {/* Intro Text */}
           <div className="text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-              Hi I am <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Sumathi</span>
+              Hello! I'm <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Sumathi</span> — welcome to my digital space.
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in delay-300">Aspiring Digital Marketer with a passion for growing brands online.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in delay-500">
